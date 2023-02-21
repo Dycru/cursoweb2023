@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda de Videojuegos</title>
+	<link rel="stylesheet" href="estilos.css">
+    
+    <style>
+        .animacion-botones {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+        /* Estilos para el encabezado */
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	margin: 0;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav li {
+	margin: 0 20px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Estilos para las secciones de los juegos */
+main section {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+main section img {
+	max-width: 100%;
+}
+
+main section h2 {
+	margin-top: 0;
+}
+
+main section button {
+	background-color: #000;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	font-weight: bold;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+main section p:last-child {
+	margin-top: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* Estilos para el pie de página */
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Tienda de Videojuegos</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Juegos</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Juego 1</h2>
+			<img src="juego1.jpg" alt="Juego 1">
+			<p>Descripción del Juego 1</p>
+			<button>Agregar al carrito</button>
+			<p>$29.99</p>
+		</section>
+		<section>
+			<h2>Juego 2</h2>
+			<img src="juego2.jpg" alt="Juego 2">
+			<p>Descripción del Juego 2</p>
+			<button>Agregar al carrito</button>
+			<p>$39.99</p>
+		</section>
+		<section>
+			<h2>Juego 3</h2>
+			<img src="juego3.jpg" alt="Juego 3">
+			<p>Descripción del Juego 3</p>
+			<button>Agregar al carrito</button>
+			<p>$49.99</p>
+		</section>
+	</main>
+	<footer>
+		<p>Derechos de autor © 2023 Tienda de Videojuegos.</p>
+	</footer>
+
+    <script>
+        // Seleccionar los botones en el DOM
+const botones = document.querySelectorAll('button');
+
+// Agregar un manejador de eventos a cada botón
+botones.forEach((boton) => {
+  boton.addEventListener('mouseover', () => {
+    // Agregar una clase CSS para la animación
+    boton.classList.add('animacion-botones');
+  });
+
+  boton.addEventListener('mouseout', () => {
+    // Remover la clase CSS después de la animación
+    boton.classList.remove('animacion-botones');
+  });
+});
+    </script>
+	<style>
+		slider {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 200px;
+		overflow: hidden;
+	  }
+	  
+	  .slider-item {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		transition: transform 0.5s ease-in-out;
+	  }
+	  
+	  .slider-item.active {
+		transform: translateX(0%);
+	  }
+	  
+	  .slider-item.next {
+		transform: translateX(-100%);
+	  }
+	  
+	  .slider-item.prev {
+		transform: translateX(100%);
+	  }
+	  
+	  .slider-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		font-size: 14px;
+	</style>
+	
+</body>
+</html>
