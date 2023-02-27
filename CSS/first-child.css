@@ -1,0 +1,10 @@
+p:first-child {
+    color: rgb(0, 255, 85);
+    }
+    p i:first-child {
+        color: rgb(0, 255, 98);
+        }
+       /* todos los italic del primer parrafo*/
+        p:first-child i {
+            color: blue;
+            }
