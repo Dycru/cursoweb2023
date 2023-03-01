@@ -1,0 +1,12 @@
+div p {
+  background-color: yellow;
+}
+div > p {
+  background-color: rgb(255, 0, 0);
+}
+div + p {
+  background-color: rgb(255, 0, 200);
+}
+div ~ p {
+  background-color: rgb(115, 255, 0);
+}
