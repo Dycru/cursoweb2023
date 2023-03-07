@@ -2,24 +2,37 @@
 <html>
 
 <head>
-    <title>Matrix Rain</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/matrix2.css">
     <link rel="stylesheet" href="../PHP/matrix2.php">
+    <title>Matrix Rain</title>
+
 
 </head>
 
 <body>
-    <div class="matrix">
-        <?php
-			//Generar los caracteres aleatorios para la lluvia
-			for ($i=0; $i<200; $i++) {
-				$code = rand(35, 122);
-				echo <span> . chr($code) . "</span>";
-			}
-		?>
-    </div>
+    <div id="matrix"></div>
+    <script>
+        // Matrix Rain code
+        var matrix = document.getElementById("matrix");
+        var columns = Math.floor(window.innerWidth / 20);
+        var drops = [];
+        for (var i = 0; i < columns; i++) {
+            drops[i] = Math.floor(Math.random() * window.innerHeight);
+        }
+        function draw() {
+            matrix.innerHTML = "";
+            for (var i = 0; i < columns; i++) {
+                var randomChar = String.fromCharCode(Math.floor(Math.random() * 94) + 33);
+                matrix.innerHTML += randomChar;
+                if (drops[i] * 20 > window.innerHeight) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+                matrix.style.transform = "translateY(-" + drops[i] * 20 + "px)";
+            }
+        }
+        setInterval(draw, 75);
+    </script>
 </body>
 
 </html>
