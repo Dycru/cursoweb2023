@@ -1,0 +1,31 @@
+body {
+	background-color: black;
+}
+
+.matrix {
+	font-size: 16px;
+	color: #0F0;
+	font-family: monospace;
+	text-align: center;
+	padding-top: 50px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.matrix span {
+	position: relative;
+	animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+	0% {
+		top: -30px;
+	}
+	100% {
+		top: 100%;
+	}
+}
