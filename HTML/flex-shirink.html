@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo flex-shrink</title>
+    <style>
+      .container {
+        display: flex;
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+      }
+      .box {
+        flex-shrink: 1;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: red;
+      }
+      .box.shrink {
+        flex-shrink: 0;
+        
+      }
+
+      div{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box shrink">3</div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
