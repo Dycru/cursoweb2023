@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="../JS/declaracion-if-else.js">
+<body>
+
+<p>Muestra "Buenos días" si la hora es inferior a las
+18:00h</p>
+
+<p id="buenas">Buenos Dias</p>
+
+<script>
+
+
+var hour = new Date().getHours();
+
+var saludo;
+
+if (hour < 17) {
+
+saludo = "Buenos días";
+
+} else {
+
+saludo = "Buenos Dias";
+
+}
+
+document.getElementById("buenas").innerHTML =
+saludo;
+
+
+</script>
+
+</body></html>
