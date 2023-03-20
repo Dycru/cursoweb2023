@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript en HTML</title>
+</head>
+
+<body>
+    <h1>Notas de Estudiantes</h1>
+    <ul id="notas-lista"></ul>
+    <script>
+        let notas = [8, 9, 7, 10, 6];
+
+        let listaNotas = document.getElementById("notas-lista");
+        for (let i = 0; i < notas.length; i++) {
+            let nota = document.createElement("li");
+            nota.textContent = "Nota " + (i + 1) + ": " + notas[i];
+            listaNotas.appendChild(nota);
+        }
+    </script>
+</body>
+
+</html>
