@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos en HTML</title>
+	<script>
+		function showAlert() {
+			alert("¡Haz hecho clic en el botón!");
+		}
+
+		function changeColor() {
+			document.body.style.backgroundColor = "blue";
+		}
+
+		function displayMessage() {
+			document.getElementById("mensaje").innerHTML = "¡Hola Mundo!";
+		}
+        function search(event) {
+			let input = document.getElementById("search-input");
+			let keyword = input.value;
+			if (event.keyCode === 13) 
+				alert("Has buscado: " + keyword);
+				input.value = "";
+                }
+	</script>
+</head>
+<body>
+	<h1>Eventos en HTML</h1>
+    <h1>Evento onkeyup</h1>
+	<p>Escribe algo en la caja de búsqueda y presiona la tecla Enter:</p>
+	<input type="text" id="search-input" onkeyup="search(event)">
+    <button id="miBoton">Pasa el ratón por aquí</button>
+
+
+	<button onclick="showAlert()">Haz clic aquí</button>
+
+	<p>Presiona la tecla 'c' para cambiar el color de fondo:</p>
+
+	<script>
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "c") {
+				changeColor();
+			}
+		});
+        var boton = document.getElementById("miBoton");
+      boton.addEventListener("mouseover", function() {
+        boton.style.backgroundColor = "green"
+      });
+      boton.addEventListener("mouseout", function() {
+        boton.style.backgroundColor = "orange";
+      });
+	</script>
+
+	<p>Haz clic en el siguiente botón para mostrar un mensaje:</p>
+
+	<button onclick="displayMessage()">Mostrar mensaje</button>
+
+	<p id="mensaje"></p>
+
+</body>
+</html>

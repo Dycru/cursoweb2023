@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Botón con cambio de color al pasar el ratón sobre él</title>
+  </head>
+  <body>
+    <button id="miBoton">Pasa el ratón por aquí</button>
+    <script>
+      var boton = document.getElementById("miBoton");
+      boton.addEventListener("mouseover", function() {
+        boton.style.backgroundColor = "blue"
+      });
+      boton.addEventListener("mouseout", function() {
+        boton.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>
