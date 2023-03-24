@@ -65,6 +65,9 @@ document.addEventListener('keydown', function(event) {
     case 'Backspace':
       limpiar();
       break;
+      case 'Delete':
+      limpiar();
+      break;
     default:
       break;
   }
