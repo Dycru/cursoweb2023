@@ -11,7 +11,7 @@ function calcular() {
   document.getElementById("resultado").value = resultado;
 }
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
   var tecla = event.key;
   switch (tecla) {
     case '0':
@@ -65,17 +65,10 @@ document.addEventListener('keydown', function(event) {
     case 'Backspace':
       limpiar();
       break;
-      case 'Delete':
+    case 'Delete':
       limpiar();
       break;
     default:
       break;
   }
 });
-
-let person = prompt("Porfavor escribe tu nombre :) o sino te perseguire ", "Joan");
-
-if (person != null) {
-  document.getElementById("demo").innerHTML =
-  "Hello " + person + "! How are you today?";
-}
