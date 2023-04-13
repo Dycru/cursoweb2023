@@ -1,0 +1,31 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Digital_rain_animation_small_letters_shine.gif);
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  

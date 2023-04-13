@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Bucles en JavaScript</title>
+    <link rel="stylesheet" href="ejercicio-array-1.css">
+  </head>
+  <body>
+    <h1>Ejemplo de Bucles en JavaScript</h1>
+
+    <h2>Bucle for clásico:</h2>
+    <ul id="bucle-clasico"></ul>
+
+    <h2>Bucle for of:</h2>
+    <ul id="bucle-of"></ul>
+
+    <script>
+      // Pedir al usuario que introduzca los nombres de tres colores
+      const color1 = prompt("Introduce el nombre del primer color:");
+      const color2 = prompt("Introduce el nombre del segundo color:");
+      const color3 = prompt("Introduce el nombre del tercer color:");
+
+      // Almacenar los nombres de los tres colores en una matriz
+      const colores = [color1, color2, color3];
+
+      // Mostrar los colores utilizando un bucle for clásico
+      const bucleClasico = document.getElementById("bucle-clasico");
+      for (let i = 0; i < colores.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = colores[i];
+        bucleClasico.appendChild(li);
+      }
+
+      // Mostrar los colores utilizando un bucle for of
+      const bucleOf = document.getElementById("bucle-of");
+      for (const color of colores) {
+        const li = document.createElement("li");
+        li.textContent = color;
+        bucleOf.appendChild(li);
+      }
+      //ej3
+var colors = [];
+for (let i = 0; i <= 2; i++) {
+
+    let color = prompt("Escribe un color", "");
+    colores[i] = color;
+    if (color != null) {
+      document.getElementById("demo3").innerHTML =
+        "los colores son: " + colores;
+    };
+
+};
+    </script>
+  </body>
+</html>

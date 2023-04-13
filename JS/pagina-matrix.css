@@ -1,53 +1,96 @@
 h1 {
-    text-align: center;
-    color: white;
-  }
-  
-  body {
-    background-image: url("https://cdn.wallpapersafari.com/84/22/Jz6bAs.gif");
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    background-position: center;
-    background-color: #ffffff;
-    /* width:100%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+h3 {
+  color: white;
+  text-align: justify center;
+}
+
+body {
+  background-image: url("https://cdn.wallpapersafari.com/84/22/Jz6bAs.gif");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+  text-align: center;
+  /* width:100%;
     height:100%; */
-  }
-  form {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  input[type="text"] {
-    font-size: 24px;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 5px;
+}
+
+input[type="button"] {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #ddd;
+}
+
+input[type="button"]:active {
+  background-color: #ccc;
+}
+@media screen and (max-width: 479px) {
+  .container {
     width: 100%;
-    margin-bottom: 10px;
-    text-align: right;
-    padding: 5px;
+    margin: 0 auto;
   }
-  
-  input[type="button"] {
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #eee;
-    cursor: pointer;
-  }
-  
-  input[type="button"]:hover {
-    background-color: #ddd;
-  }
-  
-  input[type="button"]:active {
-    background-color: #ccc;
-  }
-  @media screen and (max-width: 479px) {
-    .container {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-  
+}
+p {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+img {
+  float: left;
+  border-radius: 65;
+}
+
+div {
+  float: right;
+  border-radius: 65;
+}
+
+/* Estilos CSS para el menú */
+nav {
+  background-color: #09ff00;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #000000;
+  color: rgb(9, 255, 0);
+}
+
