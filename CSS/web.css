@@ -1,0 +1,35 @@
+
+/* he cambiado la mayoria de cosas para que las personas con algun tipo de discapacidad o personas de alta edad puedan verlo como las demas personas  */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+}
+
+.container-fluid {
+    background-color: #00ff00;
+    color: white;
+}
+
+h4 {
+    margin: 0;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
